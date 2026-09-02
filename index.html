@@ -30,7 +30,7 @@ main{max-width:1380px;padding:46px 30px 60px}
 h1{font-size:58px;margin:0 0 12px}
 .sub{font-size:25px;margin:0 0 34px}
 #search{height:88px;border-radius:22px;padding:0 28px;font-size:24px}
-.cats{gap:14px;padding:30px 0 26px;overflow-x:auto;border-bottom:6px solid #555}
+.cats{gap:14px;padding:30px 0 26px;overflow-x:auto}
 .cat{font-size:22px;padding:15px 26px;border-radius:34px}
 .games{grid-template-columns:repeat(auto-fill,220px);gap:18px;margin-top:28px}
 .card{width:220px;border:0;background:transparent!important;border-radius:14px;position:relative;overflow:hidden}
@@ -38,17 +38,17 @@ h1{font-size:58px;margin:0 0 12px}
 .cardbody{display:none!important}
 .card::after{left:10px;top:10px;background:transparent;color:#fff;padding:0;font-size:20px;text-shadow:1px 1px 3px #000;z-index:3}
 .play{position:absolute;inset:0;z-index:2}
+header #search{width:min(260px,38vw);height:44px;margin:0 14px;padding:0 14px;border-radius:12px;font-size:15px;flex:0 1 260px;}
 @media(max-width:700px){
- header{height:90px;padding:0 22px}.logo{font-size:32px}#theme{font-size:16px;padding:12px 17px}
+ header{height:82px;padding:0 14px;gap:8px}.logo{font-size:28px}header #search{width:auto;min-width:0;flex:1;height:42px;margin:0 4px;padding:0 11px;font-size:14px}#theme{font-size:14px;padding:11px 13px;white-space:nowrap}
  main{padding:34px 22px 50px}h1{font-size:40px}.sub{font-size:20px;margin-bottom:25px}
- #search{height:66px;font-size:19px}.cats{padding:22px 0;border-bottom-width:5px}.cat{font-size:17px;padding:12px 18px}
+.cats{padding:22px 0}.cat{font-size:17px;padding:12px 18px}
  .games{grid-template-columns:repeat(2,150px);gap:14px;margin-top:24px}.card,.pic{width:150px}.pic{height:150px}
  .card::after{font-size:16px;left:8px;top:8px}
 }
 </style></head><body>
-<header><div class="logo">EZGAME</div><button id="theme">Ay</button></header>
+<header><div class="logo">EZGAME</div><input id="search" placeholder="Oyun ara..." type="search"><button id="theme">Ay</button></header>
 <main><h1>Oyunlar</h1><p class="sub">Oynamak istediğin oyunu ara.</p>
-<input id="search" placeholder="Oyun ara..." type="search">
 <div class="cats">
 <button class="cat" data-cat="all">Tüm Oyunlar</button>
 <button class="cat" data-cat="korku">Korku Oyunları</button>
